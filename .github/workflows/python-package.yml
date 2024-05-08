@@ -13,7 +13,6 @@ jobs:
 
     steps:
       - uses: actions/checkout@v2
-      - run: if [ -d ~/.cache ]; then ls -l ~/.cache; else echo "Cache dir does not exist"; fi
       - name: Cache pip packages
         uses: actions/cache@v2
         with:
@@ -21,6 +20,7 @@ jobs:
           key: ${{ runner.os }}-pip-${{ hashFiles('requirements.txt') }}
           restore-keys: |
             ${{ runner.os }}-pip-
+      - run: if [ -d ~/.cache ]; then ls -l ~/.cache; else echo "Cache dir does not exist"; fi
       - name: Setup Python
         uses: actions/setup-python@v2
         with:
