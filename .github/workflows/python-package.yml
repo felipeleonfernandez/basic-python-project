@@ -9,7 +9,7 @@ jobs:
 
     steps:
       - uses: actions/checkout@v2
-      - run: ls -l ~/.cache
+      - run: if [ -d ~/.cache ]; then ls -l ~/.cache; else echo "Cache dir does not exist"; fi
       - name: Cache pip packages
         uses: actions/cache@v2
         with:
