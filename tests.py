@@ -1,6 +1,6 @@
 import pytest
 from unittest.mock import patch
-from your_module import greet
+from script import greet
 
 @pytest.mark.parametrize("name, expected_output", [
     ('Alice', 'Hello, Alice!'),
