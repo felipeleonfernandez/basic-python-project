@@ -14,5 +14,5 @@ def greet(name: str) -> str:
         A greeting message.
     """
     if not name:
-        return "Hello!"
+        return "Hello, Anonymous!"
     return f"Hello, Mr./Ms. {name}!"
