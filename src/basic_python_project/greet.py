@@ -15,4 +15,4 @@ def greet(name: str) -> str:
     """
     if not name:
         return "Hello!"
-    return f"Hello, {name}!"
+    return f"Hello, Mr./Ms. {name}!"

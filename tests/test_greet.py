@@ -10,8 +10,8 @@ class TestGreet:
     @pytest.mark.parametrize(
         "name,expected",
         [
-            ("Alice", "Hello, Alice!"),
-            ("Bob", "Hello, Bob!"),
+            ("Alice", "Hello, Mr./Ms. Alice!"),
+            ("Bob", "Hello, Mr./Ms. Bob!"),
             ("", "Hello!"),
         ],
     )
