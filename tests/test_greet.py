@@ -10,9 +10,9 @@ class TestGreet:
     @pytest.mark.parametrize(
         "name,expected",
         [
-            ("Alice", "Hello, Alice!"),
-            ("Bob", "Hello, Bob!"),
-            ("", "Hello!"),
+            ("Alice", "Hello, Mr./Ms. Alice!"),
+            ("Bob", "Hello, Mr./Ms. Bob!"),
+            ("", "Hello, Mr./Ms. !"),
         ],
     )
     def test_greet_with_different_names(self, name: str, expected: str) -> None:
