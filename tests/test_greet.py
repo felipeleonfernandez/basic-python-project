@@ -12,7 +12,7 @@ class TestGreet:
         [
             ("Alice", "Hello, Mr./Ms. Alice!"),
             ("Bob", "Hello, Mr./Ms. Bob!"),
-            ("", "Hello!"),
+            ("", "Hello, Anonymous!"),
         ],
     )
     def test_greet_with_different_names(self, name: str, expected: str) -> None:
